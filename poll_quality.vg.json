@@ -8,7 +8,7 @@
   },
   "data": [
     {
-      "name": "selector004_store",
+      "name": "selector006_store",
       "values": [
         {
           "unit": "concat_0",
@@ -9374,7 +9374,7 @@
       ]
     },
     {
-      "name": "selector004_answer",
+      "name": "selector006_answer",
       "init": "\"Sanders\"",
       "bind": {
         "input": "radio",
@@ -9396,8 +9396,8 @@
       }
     },
     {
-      "name": "selector004",
-      "update": "vlSelectionResolve(\"selector004_store\", \"union\")"
+      "name": "selector006",
+      "update": "vlSelectionResolve(\"selector006_store\", \"union\")"
     }
   ],
   "layout": {
@@ -9426,11 +9426,11 @@
       },
       "signals": [
         {
-          "name": "selector004_tuple",
-          "update": "selector004_answer !== null ? {fields: selector004_tuple_fields, values: [selector004_answer]} : null"
+          "name": "selector006_tuple",
+          "update": "selector006_answer !== null ? {fields: selector006_tuple_fields, values: [selector006_answer]} : null"
         },
         {
-          "name": "selector004_tuple_fields",
+          "name": "selector006_tuple_fields",
           "value": [
             {
               "type": "E",
@@ -9439,13 +9439,13 @@
           ]
         },
         {
-          "name": "selector004_modify",
+          "name": "selector006_modify",
           "on": [
             {
               "events": {
-                "signal": "selector004_tuple"
+                "signal": "selector006_tuple"
               },
-              "update": "modify(\"selector004_store\", selector004_tuple, true)"
+              "update": "modify(\"selector006_store\", selector006_tuple, true)"
             }
           ]
         }
@@ -9471,7 +9471,7 @@
               },
               "fill": [
                 {
-                  "test": "!(length(data(\"selector004_store\"))) || (vlSelectionTest(\"selector004_store\", datum))",
+                  "test": "!(length(data(\"selector006_store\"))) || (vlSelectionTest(\"selector006_store\", datum))",
                   "scale": "color",
                   "field": "answer"
                 },
@@ -9532,7 +9532,6 @@
           "scale": "concat_0_y",
           "orient": "left",
           "grid": false,
-          "title": "Candidate Avg. Polling Percentage",
           "labelOverlap": "greedy",
           "zindex": 0
         }
@@ -9554,11 +9553,11 @@
       },
       "signals": [
         {
-          "name": "selector004_tuple",
-          "update": "selector004_answer !== null ? {fields: selector004_tuple_fields, values: [selector004_answer]} : null"
+          "name": "selector006_tuple",
+          "update": "selector006_answer !== null ? {fields: selector006_tuple_fields, values: [selector006_answer]} : null"
         },
         {
-          "name": "selector004_tuple_fields",
+          "name": "selector006_tuple_fields",
           "value": [
             {
               "type": "E",
@@ -9567,13 +9566,13 @@
           ]
         },
         {
-          "name": "selector004_modify",
+          "name": "selector006_modify",
           "on": [
             {
               "events": {
-                "signal": "selector004_tuple"
+                "signal": "selector006_tuple"
               },
-              "update": "modify(\"selector004_store\", selector004_tuple, true)"
+              "update": "modify(\"selector006_store\", selector006_tuple, true)"
             }
           ]
         }
@@ -9623,7 +9622,7 @@
                 "update": {
                   "stroke": [
                     {
-                      "test": "!(length(data(\"selector004_store\"))) || (vlSelectionTest(\"selector004_store\", datum))",
+                      "test": "!(length(data(\"selector006_store\"))) || (vlSelectionTest(\"selector006_store\", datum))",
                       "scale": "color",
                       "field": "answer"
                     },
@@ -9667,7 +9666,7 @@
               },
               "fill": [
                 {
-                  "test": "!(length(data(\"selector004_store\"))) || (vlSelectionTest(\"selector004_store\", datum))",
+                  "test": "!(length(data(\"selector006_store\"))) || (vlSelectionTest(\"selector006_store\", datum))",
                   "scale": "color",
                   "field": "answer"
                 },
